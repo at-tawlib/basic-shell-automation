@@ -7,23 +7,17 @@
 #Author: Abdul-Fatahu Hardi
 # START #
 dir=$1
-if [[ "$dir" = "home" ]]; then
-	cd /home/at-tawlib
-fi
 
-if [ $1  desktop ]; then
-	cd /home/at-tawlib/Desktop
-fi
-
-if [ $1 == "downloads" ]; then
-	cd /home/at-tawlib/Downloads
-fi
-if [ $1 == "alx" ]; then
-	cd /home/at-tawlib/Desktop/ALXSE
-fi
-
-if [ $1 == "python" ]; then
-	cd /home/at-tawlib/Desktop/Python3
-fi
-
+case "$dir" in
+	"home")		cd /home/at-tawlib
+				;;
+	"desktop")	cd /home/at-tawlib/Desktop
+				;;
+	"alx")		cd /home/at-tawlib/Desktop/ALXSE
+				;;
+	"python")	cd /home/at-tawlib/Desktop/Python3
+				;;
+	*) echo		"Directory not available"
+				;;
+esac
 # END #

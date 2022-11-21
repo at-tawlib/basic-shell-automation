@@ -1,0 +1,29 @@
+#!/bin/bash
+#Purpose: Scripts changes directory to entered directory without entering full path
+#		  No need to type the full path
+#Version: 1.0
+#Created Date:  Fri Nov 18 07:45:32 AM GMT 2022
+#Modified Date:
+#Author: Abdul-Fatahu Hardi
+# START #
+dir=$1
+if [[ "$dir" = "home" ]]; then
+	cd /home/at-tawlib
+fi
+
+if [ $1  desktop ]; then
+	cd /home/at-tawlib/Desktop
+fi
+
+if [ $1 == "downloads" ]; then
+	cd /home/at-tawlib/Downloads
+fi
+if [ $1 == "alx" ]; then
+	cd /home/at-tawlib/Desktop/ALXSE
+fi
+
+if [ $1 == "python" ]; then
+	cd /home/at-tawlib/Desktop/Python3
+fi
+
+# END #

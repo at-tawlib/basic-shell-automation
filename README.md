@@ -6,4 +6,7 @@
 - Move the script to your bin directory (first check if file exists first)
 - Type name of script and hit enter to run it anywhere
 
+run script as
+```. goto home ```
+
 **goto** : allows user to change directory from current directory without entering the full path
